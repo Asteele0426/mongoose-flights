@@ -1,0 +1,16 @@
+<%- include('../partials/header') %>
+
+
+<section id="badge-container">
+  
+</section>
+
+<form id="add-ticket-form" action="/ticket" method="POST">
+  <label>Name:</label>
+  <input type="text" name="seat" required pattern="[A-F][1-9]\d?">
+  <label>Born:</label>
+  <input type="date" name="born">
+  <input type="submit" value="Add Ticket">
+</form>
+
+<%- include('../partials/footer') %>
